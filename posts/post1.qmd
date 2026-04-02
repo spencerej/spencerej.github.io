@@ -1,8 +1,87 @@
 ---
-title: "Starting a Project on Bayesian Conformity: What I Want to Understand"
-author: "Eric Spencer"
+title: "Starting a Project on Bayesian Conformity"
+date: 2026-04-02
+categories: [Bayesian, Decision Making, Research]
 format: html
-editor: visual
 ---
 
-## Bayesian Theory of Conformity
+## Starting a Project on Bayesian Conformity
+
+The beginnings of this project trace back to the U.S. presidential election in 2024. More broadly, it sits within a pattern that has repeated across multiple election cycles, where observed outcomes have not always aligned with personal or statistical expectations.
+
+From a statistical perspective, this disconnect is not trivial. In 2016, polling data consistently suggested one outcome, yet the realized result diverged in a way that prompted widespread reflection. Similar tensions between expectation and reality have persisted in subsequent elections. These moments raise a natural question:
+
+> What are we missing when our models of the world fail to match observed outcomes?
+
+For me, this question became more personal following the 2024 election. I found myself not just disagreeing with the result, but struggling to understand how such decisions were being made at scale. It initially felt as though many individuals were acting in ways that conflicted with what I would have considered their own interests or values.
+
+That framing, however, turned out to be limiting.
+
+The more I reflected on it, the more I began to question whether “being wrong” was the right lens at all. A more productive perspective emerged: what if individuals are not making incorrect decisions, but are instead operating under different assumptions, different information, or different weightings of the same information?
+
+This led me to think more carefully about the structure of decision-making itself. I began imagining a kind of “average” individual and asking:
+
+-   What variables matter most to them?\
+-   How are those variables weighted?\
+-   How does their internal decision process differ from my own?
+
+While we do not typically think of decision-making in mathematical terms, human behavior is not random. People act based on beliefs, information, and experience, even if those elements are incomplete or imperfect. This suggests that there may be a way to model decision-making formally, even in complex and uncertain environments.
+
+At the same time, I was considering a broader transition in my own career. After years of working in analytics and helping organizations make decisions based on data, I found myself increasingly interested in the underlying theory of decision-making itself. Pursuing research, and potentially a path toward academia, raised a natural question: what kind of problem is worth studying deeply?
+
+These two threads, practical experience with decision-making and a growing curiosity about how decisions are formed, ultimately converged.
+
+They led me to the study of decision-making under uncertainty, and more specifically, to Bayesian models of conformity.
+
+------------------------------------------------------------------------
+
+## What is Bayesian Conformity? (High Level)
+
+At a high level, Bayesian conformity models attempt to describe how individuals update their beliefs in the presence of both private information and social influence.
+
+Each individual begins with some prior belief about the world. As new information becomes available, that belief is updated using Bayesian principles, incorporating both prior beliefs and new evidence. However, in a social setting, individuals are also influenced by the observed actions or beliefs of others.
+
+This creates an interplay between:
+
+-   **Private signals** (what an individual observes directly)\
+-   **Social signals** (what others appear to believe or do)
+
+Over time, this interaction can lead to patterns such as consensus, polarization, or conformity, even when individuals are behaving rationally within their own informational context.
+
+What makes this framework compelling is that it provides a formal way to represent something that is often described informally: how people influence one another’s beliefs.
+
+------------------------------------------------------------------------
+
+## Why Decision-Making Under Uncertainty Matters
+
+In most real-world situations, individuals do not have access to complete or perfectly reliable information. Decisions are made under uncertainty, often relying on a combination of data, experience, intuition, and values.
+
+Things like risk tolerance, prior experiences, or personal values are difficult or impossible to quantify directly. However, they play a central role in how decisions are made.
+
+Understanding how these elements are incorporated into belief formation has broad implications. It can inform how we think about:
+
+-   Individual decision-making\
+-   Group behavior\
+-   The conditions under which collective outcomes diverge from expectations
+
+------------------------------------------------------------------------
+
+## What I’m Trying to Understand
+
+At this point, I have spent considerable time working through the structure of the model presented in the paper, including both its theoretical formulation and its simulation framework.
+
+Rather than approaching this project from a position of complete unfamiliarity, my focus is now shifting toward deeper questions:
+
+-   How sensitive are the model’s outcomes to its underlying assumptions?\
+-   What happens when key parameters, such as prior beliefs or group size, are varied?\
+-   To what extent do the model’s dynamics reflect real-world patterns of belief formation?
+
+In other words, the goal is no longer just to understand how the model works, but to explore what it reveals and where it may fall short.
+
+------------------------------------------------------------------------
+
+## What Comes Next
+
+The next steps in this project will focus on translating the theoretical model into simulation, reproducing key results, and then systematically exploring how changes in assumptions affect outcomes.
+
+This series will document that process.
