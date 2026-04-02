@@ -1,0 +1,8 @@
+---
+title: "Starting a Project on Bayesian Conformity: What I Want to Understand"
+author: "Eric Spencer"
+format: html
+editor: visual
+---
+
+## Bayesian Theory of Conformity
