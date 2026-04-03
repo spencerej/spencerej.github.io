@@ -1,7 +1,3 @@
----
-
----
-
 ::: hero
 # Eric Spencer
 
@@ -23,13 +19,3 @@ This project explores how individuals update beliefs and influence one another i
 It combines simulation, theory, and interpretation to better understand how collective decisions emerge under uncertainty.
 
 [Start the Series](posts.qmd){.button-link}
-
-------------------------------------------------------------------------
-
-## About
-
-I have a background in analytics and statistics, with experience building data-driven decision systems in applied settings.
-
-My current focus is on statistical modeling, decision theory, and research methods, with the long-term goal of contributing to academic research and teaching.
-
-This site documents my work as I explore these ideas through projects and writing.

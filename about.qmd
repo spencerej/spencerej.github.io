@@ -2,4 +2,9 @@
 title: "About"
 ---
 
-About this site
+I have a background in analytics and statistics, with experience building data-driven decision systems in applied settings.
+
+My current focus is on statistical modeling, decision theory, and research methods, with the long-term goal of contributing to academic research and teaching.
+
+This site documents my work as I explore these ideas through projects and writing.
+
