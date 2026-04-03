@@ -9,9 +9,30 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "blog",
+    "title": "Home",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Quantitative Analyst | Statistical Research | Decision-Making Under Uncertainty\nI study how people form beliefs and make decisions under uncertainty, with a focus on Bayesian models and real-world behavior.\nRead the Blog\n\n\n\n\n\nThis project explores how individuals update beliefs and influence one another in group settings using Bayesian models.\nThe work combines simulation, theory, and interpretation to better understand how collective decisions emerge under uncertainty.\nStart the Series\n\n\n\n\n\n\ncontents: posts sort: “date desc” max-items: 3\n\n\n\n\n\nI have a background in analytics and statistics, with experience building data-driven decision systems in applied settings.\nMy current focus is on statistical modeling, decision theory, and research methods, with the long-term goal of contributing to academic research and teaching.\nThis site documents my work as I explore these ideas through projects and writing."
+  },
+  {
+    "objectID": "index.html#current-work",
+    "href": "index.html#current-work",
+    "title": "Home",
+    "section": "",
+    "text": "This project explores how individuals update beliefs and influence one another in group settings using Bayesian models.\nThe work combines simulation, theory, and interpretation to better understand how collective decisions emerge under uncertainty.\nStart the Series"
+  },
+  {
+    "objectID": "index.html#latest-writing",
+    "href": "index.html#latest-writing",
+    "title": "Home",
+    "section": "",
+    "text": "contents: posts sort: “date desc” max-items: 3"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Home",
+    "section": "",
+    "text": "I have a background in analytics and statistics, with experience building data-driven decision systems in applied settings.\nMy current focus is on statistical modeling, decision theory, and research methods, with the long-term goal of contributing to academic research and teaching.\nThis site documents my work as I explore these ideas through projects and writing."
   },
   {
     "objectID": "about.html",
