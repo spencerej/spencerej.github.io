@@ -2,9 +2,16 @@
   {
     "objectID": "posts.html",
     "href": "posts.html",
-    "title": "Blog",
+    "title": "Blog Posts",
     "section": "",
-    "text": "Blog\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStarting a Project on Bayesian Conformity\n\n\n\n\n\n\n\n\nApr 2, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Blog Posts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStarting a Project on Bayesian Conformity\n\n\n\n\n\n\n\n\nApr 2, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Eric Spencer",
+    "section": "",
+    "text": "Quantitative Analyst | Statistical Research | Decision-Making Under Uncertainty\nI study how people form beliefs and make decisions under uncertainty, with a focus on Bayesian models and real-world behavior.\nRead the Blog"
   },
   {
     "objectID": "index.html#current-work",
@@ -14,18 +21,11 @@
     "text": "Current Work\n\nBayesian Conformity and Decision-Making\nThis project explores how individuals update beliefs and influence one another in group settings using Bayesian models.\nIt combines simulation, theory, and interpretation to better understand how collective decisions emerge under uncertainty.\nStart the Series"
   },
   {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "Eric Spencer",
-    "section": "About",
-    "text": "About\nI have a background in analytics and statistics, with experience building data-driven decision systems in applied settings.\nMy current focus is on statistical modeling, decision theory, and research methods, with the long-term goal of contributing to academic research and teaching.\nThis site documents my work as I explore these ideas through projects and writing."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "I have a background in analytics and statistics, with experience building data-driven decision systems in applied settings.\nMy current focus is on statistical modeling, decision theory, and research methods, with the long-term goal of contributing to academic research and teaching.\nThis site documents my work as I explore these ideas through projects and writing."
   },
   {
     "objectID": "drafts/post1_drafts.html",
