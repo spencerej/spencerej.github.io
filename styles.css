@@ -23,7 +23,7 @@ body {
 
 /* Section spacing */
 section {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 /* Subtle separators */
@@ -79,4 +79,8 @@ main {
 .quarto-title-block {
   margin-top: 0 !important;
   padding-top: 0.5rem !important;
+}
+
+main {
+  max-width: 750px;
 }
