@@ -15,10 +15,10 @@ website:
 format:
   html:
     theme:
-      - cosmo
+      - litera
       - brand
     css: styles.css
-    toc: true
+    toc: false
 
 
 

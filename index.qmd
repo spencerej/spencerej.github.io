@@ -2,6 +2,7 @@
 title: "Home"
 ---
 
+::: hero
 # Eric Spencer
 
 Quantitative Analyst \| Statistical Research \| Decision-Making Under Uncertainty
@@ -9,6 +10,7 @@ Quantitative Analyst \| Statistical Research \| Decision-Making Under Uncertaint
 I study how people form beliefs and make decisions under uncertainty, with a focus on Bayesian models and real-world behavior.
 
 [Read the Blog](posts.qmd)
+:::
 
 ------------------------------------------------------------------------
 
@@ -18,17 +20,9 @@ I study how people form beliefs and make decisions under uncertainty, with a foc
 
 This project explores how individuals update beliefs and influence one another in group settings using Bayesian models.
 
-The work combines simulation, theory, and interpretation to better understand how collective decisions emerge under uncertainty.
+It combines simulation, theory, and interpretation to better understand how collective decisions emerge under uncertainty.
 
 [Start the Series](posts.qmd)
-
-------------------------------------------------------------------------
-
-## Latest Writing
-
-::: listing
-contents: posts sort: "date desc" max-items: 3
-:::
 
 ------------------------------------------------------------------------
 
