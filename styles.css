@@ -1,1 +1,63 @@
 /* css styles */
+/* Improve overall readability */
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Hero section styling */
+.hero {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Section spacing */
+section {
+  margin-top: 3rem;
+}
+
+/* Subtle separators */
+hr {
+  margin: 2.5rem 0;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+}
+
+/* Make headings cleaner */
+h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Add soft content width for readability */
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Improve button-like links */
+a[href*="posts"] {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+a[href*="posts"]:hover {
+  background-color: #f5f5f5;
+}
