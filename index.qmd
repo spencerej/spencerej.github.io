@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: false
 ---
 
 ::: hero
@@ -9,7 +9,7 @@ Quantitative Analyst \| Statistical Research \| Decision-Making Under Uncertaint
 
 I study how people form beliefs and make decisions under uncertainty, with a focus on Bayesian models and real-world behavior.
 
-[Read the Blog](posts.qmd)
+[Read the Blog](posts.qmd){.button-link}
 :::
 
 ------------------------------------------------------------------------
@@ -22,7 +22,7 @@ This project explores how individuals update beliefs and influence one another i
 
 It combines simulation, theory, and interpretation to better understand how collective decisions emerge under uncertainty.
 
-[Start the Series](posts.qmd)
+[Start the Series](posts.qmd){.button-link}
 
 ------------------------------------------------------------------------
 
