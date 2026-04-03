@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-04-02">
 
-<title>Starting a Project on Bayesian Conformity – Eric Spencer</title>
+<title>Blog – Eric Spencer</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,9 +70,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../styles.css">
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -81,9 +140,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Eric Spencer</span>
     </a>
   </div>
@@ -94,15 +153,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts.html"> 
+    <a class="nav-link active" href="./posts.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -121,11 +180,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#starting-a-project-on-bayesian-conformity" id="toc-starting-a-project-on-bayesian-conformity" class="nav-link active" data-scroll-target="#starting-a-project-on-bayesian-conformity">Starting a Project on Bayesian Conformity</a></li>
-  <li><a href="#what-is-bayesian-conformity-high-level" id="toc-what-is-bayesian-conformity-high-level" class="nav-link" data-scroll-target="#what-is-bayesian-conformity-high-level">What is Bayesian Conformity? (High Level)</a></li>
-  <li><a href="#why-decision-making-under-uncertainty-matters" id="toc-why-decision-making-under-uncertainty-matters" class="nav-link" data-scroll-target="#why-decision-making-under-uncertainty-matters">Why Decision-Making Under Uncertainty Matters</a></li>
-  <li><a href="#what-im-trying-to-understand" id="toc-what-im-trying-to-understand" class="nav-link" data-scroll-target="#what-im-trying-to-understand">What I’m Trying to Understand</a></li>
-  <li><a href="#what-comes-next" id="toc-what-comes-next" class="nav-link" data-scroll-target="#what-comes-next">What Comes Next</a></li>
+  <li><a href="#blog" id="toc-blog" class="nav-link active" data-scroll-target="#blog">Blog</a></li>
   </ul>
 </nav>
     </div>
@@ -134,25 +189,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Starting a Project on Bayesian Conformity</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Bayesian</div>
-    <div class="quarto-category">Decision Making</div>
-    <div class="quarto-category">Research</div>
-  </div>
-  </div>
+<h1 class="title">Blog</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 2, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -162,81 +206,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="starting-a-project-on-bayesian-conformity" class="level2">
-<h2 class="anchored" data-anchor-id="starting-a-project-on-bayesian-conformity">Starting a Project on Bayesian Conformity</h2>
-<p>The beginnings of this project trace back to the U.S. presidential election in 2024. More broadly, it sits within a pattern that has repeated across multiple election cycles, where observed outcomes have not always aligned with personal or statistical expectations.</p>
-<p>From a statistical perspective, this disconnect is not trivial. In 2016, polling data consistently suggested one outcome, yet the realized result diverged in a way that prompted widespread reflection. Similar tensions between expectation and reality have persisted in subsequent elections. These moments raise a natural question:</p>
-<blockquote class="blockquote">
-<p><em>What are we missing when our models of the world fail to match observed outcomes?</em></p>
-</blockquote>
-<p>For me, this question became more personal following the 2024 election. I found myself not just disagreeing with the result, but struggling to understand how such decisions were being made at scale. It initially felt as though many individuals were acting in ways that conflicted with what I would have considered their own interests or values.</p>
-<p>That framing, however, turned out to be limiting.</p>
-<p>The more I reflected on it, the more I began to question whether “being wrong” was the right lens at all. A more productive perspective emerged: what if individuals are not making incorrect decisions, but are instead operating under different assumptions, different information, or different weightings of the same information?</p>
-<p>This led me to think more carefully about the structure of decision-making itself. I began imagining a kind of “average” individual and asking:</p>
-<ul>
-<li>What variables matter most to them?<br>
-</li>
-<li>How are those variables weighted?<br>
-</li>
-<li>How does their internal decision process differ from my own?</li>
-</ul>
-<p>While we do not typically think of decision-making in mathematical terms, human behavior is not random. People act based on beliefs, information, and experience, even if those elements are incomplete or imperfect. This suggests that there may be a way to model decision-making formally, even in complex and uncertain environments.</p>
-<p>At the same time, I was considering a broader transition in my own career. After years of working in analytics and helping organizations make decisions based on data, I found myself increasingly interested in the underlying theory of decision-making itself. Pursuing research, and potentially a path toward academia, raised a natural question: what kind of problem is worth studying deeply?</p>
-<p>These two threads, practical experience with decision-making and a growing curiosity about how decisions are formed, ultimately converged.</p>
-<p>They led me to the study of decision-making under uncertainty, and more specifically, to Bayesian models of conformity.</p>
-<hr>
-</section>
-<section id="what-is-bayesian-conformity-high-level" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-bayesian-conformity-high-level">What is Bayesian Conformity? (High Level)</h2>
-<p>At a high level, Bayesian conformity models attempt to describe how individuals update their beliefs in the presence of both private information and social influence.</p>
-<p>Each individual begins with some prior belief about the world. As new information becomes available, that belief is updated using Bayesian principles, incorporating both prior beliefs and new evidence. However, in a social setting, individuals are also influenced by the observed actions or beliefs of others.</p>
-<p>This creates an interplay between:</p>
-<ul>
-<li><strong>Private signals</strong> (what an individual observes directly)<br>
-</li>
-<li><strong>Social signals</strong> (what others appear to believe or do)</li>
-</ul>
-<p>Over time, this interaction can lead to patterns such as consensus, polarization, or conformity, even when individuals are behaving rationally within their own informational context.</p>
-<p>What makes this framework compelling is that it provides a formal way to represent something that is often described informally: how people influence one another’s beliefs.</p>
-<hr>
-</section>
-<section id="why-decision-making-under-uncertainty-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-decision-making-under-uncertainty-matters">Why Decision-Making Under Uncertainty Matters</h2>
-<p>In most real-world situations, individuals do not have access to complete or perfectly reliable information. Decisions are made under uncertainty, often relying on a combination of data, experience, intuition, and values.</p>
-<p>Things like risk tolerance, prior experiences, or personal values are difficult or impossible to quantify directly. However, they play a central role in how decisions are made.</p>
-<p>Understanding how these elements are incorporated into belief formation has broad implications. It can inform how we think about:</p>
-<ul>
-<li>Individual decision-making<br>
-</li>
-<li>Group behavior<br>
-</li>
-<li>The conditions under which collective outcomes diverge from expectations</li>
-</ul>
-<hr>
-</section>
-<section id="what-im-trying-to-understand" class="level2">
-<h2 class="anchored" data-anchor-id="what-im-trying-to-understand">What I’m Trying to Understand</h2>
-<p>At this point, I have spent considerable time working through the structure of the model presented in the paper, including both its theoretical formulation and its simulation framework.</p>
-<p>Rather than approaching this project from a position of complete unfamiliarity, my focus is now shifting toward deeper questions:</p>
-<ul>
-<li>How sensitive are the model’s outcomes to its underlying assumptions?<br>
-</li>
-<li>What happens when key parameters, such as prior beliefs or group size, are varied?<br>
-</li>
-<li>To what extent do the model’s dynamics reflect real-world patterns of belief formation?</li>
-</ul>
-<p>In other words, the goal is no longer just to understand how the model works, but to explore what it reveals and where it may fall short.</p>
-<hr>
-</section>
-<section id="what-comes-next" class="level2">
-<h2 class="anchored" data-anchor-id="what-comes-next">What Comes Next</h2>
-<p>The next steps in this project will focus on translating the theoretical model into simulation, reproducing key results, and then systematically exploring how changes in assumptions affect outcomes.</p>
-<p>This series will document that process.</p>
+<section id="blog" class="level1">
+<h1>Blog</h1>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="QmF5ZXNpYW4lMkNEZWNpc2lvbiUyME1ha2luZyUyQ1Jlc2VhcmNo" data-listing-date-sort="1775113200000" data-listing-file-modified-sort="1775173596070" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="802">
+<div class="thumbnail"><a href="./posts/post1.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/post1.html" class="no-external">Starting a Project on Bayesian Conformity</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/post1.html" class="no-external">
+The beginnings of this project trace back to the U.S. presidential election in 2024. More broadly, it sits within a pattern that has repeated across multiple election…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/post1.html" class="no-external">
+<div class="listing-date">
+Apr 2, 2026
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
